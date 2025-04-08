@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Simulación DAO - Usuarios</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+  <h1>Gestión de Usuarios (DAO Simulado)</h1>
+
+  <form id="user-form">
+    <input type="text" id="dni" placeholder="DNI" required />
+    <input type="text" id="nombre" placeholder="Nombre completo" required />
+    <input type="email" id="correo" placeholder="Correo electrónico" required />
+    <button type="submit">Crear Usuario</button>
+  </form>
+
+  <form id="buscar-form">
+    <input type="text" id="buscar-dni" placeholder="Buscar por DNI" required />
+    <button type="submit">Buscar</button>
+  </form>
+
+  <div class="result">
+    <h2>Usuarios Registrados</h2>
+    <table id="user-table">
+      <thead>
+        <tr>
+          <th>DNI</th>
+          <th>Nombre</th>
+          <th>Correo</th>
+          <th>Último acceso</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <script src="./dao.js"></script>
+</body>
+</html>
